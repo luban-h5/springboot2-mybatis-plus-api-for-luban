@@ -1,6 +1,6 @@
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-# spring-boot-api-for-editor
+# springboot2-mybatis-plus-api-for-luban
 
 * #!zh: 为[鲁班H5](https://github.com/ly525/luban-h5) 提供 由 [Spring Boot](https://spring.io/projects/spring-boot) 驱动的后端 API
 * #!zh: 现在仍然在完善中，非常欢迎 PR，如果您想参与贡献，可以直接 Pull Request。也可以和作者直接联系, [联系方式](https://github.com/ly525/luban-h5#%E4%BA%A4%E6%B5%81%E7%BE%A4)
@@ -30,8 +30,8 @@
 
 ### Development
 1. 使用 init.sql 初始化数据库
-2. 修改 src/main/resources/application-dev.example.yml  中的 mysql 相关配置
-3. 修改 src/main/resources/application-prod.example.yml 中的 mysql 相关配置
+2. 修改 src/main/resources/application-dev.yml  中的 mysql 相关配置
+3. 修改 src/main/resources/application-prod.yml 中的 mysql 相关配置
 
 
 
@@ -55,8 +55,8 @@ yarn serve # 是 serve 不是 server!
 
 open another terminal
 ```shell script
-git clone https://gitee.com/weihongbin/luban-api.git
-cd  luban-api
+git clone https://github.com/luban-h5/springboot2-mybatis-plus-api-for-luban.git
+cd  springboot2-mybatis-plus-api-for-luban
 mvn spring-boot:run
 ``` 
 接口文档 地址 
@@ -64,3 +64,13 @@ mvn spring-boot:run
 http://[host]:[port]/doc.html
 ```
 ### 启动 Spring Boot 项目，联调开始
+#### 技术栈（当前）
+1. [SpringBoot](https://spring.io/projects/spring-boot) 
+    - Spring Boot makes it easy to create stand-alone, production-grade Spring based Applications that you can "just run". We take an opinionated view of the Spring platform and third-party libraries so you can get started with minimum fuss. Most Spring Boot applications need very little Spring configuration.
+2. [Mybatis Plus](https://mybatis.plus/) 
+    - MyBatis-Plus（简称 MP）是一个 MyBatis 的增强工具，在 MyBatis 的基础上只做增强不做改变，为简化开发、提高效率而生。
+3. [knife4j](https://doc.xiaominfo.com/) 
+    - knife4j是为Java MVC框架集成Swagger生成Api文档的增强解决方案
+4. [p6spy](https://github.com/p6spy/p6spy)
+    - P6Spy is a framework that enables database data to be seamlessly intercepted and logged with no code changes to the application.
+    
