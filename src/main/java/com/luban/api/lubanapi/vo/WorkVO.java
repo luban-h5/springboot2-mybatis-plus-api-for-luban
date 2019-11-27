@@ -12,7 +12,7 @@ import java.util.List;
  * @author WeiHongBin
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 @Accessors(chain = true)
 @ApiModel(value = "Work视图对象")
 public class WorkVO {

@@ -6,3 +6,4 @@ spring:
     password: ${H5_DB_PASSWORD:root}
   devtools:
     add-properties: false
+upload-path: ${UPLOAD_PATH:"D:\h5_file"}

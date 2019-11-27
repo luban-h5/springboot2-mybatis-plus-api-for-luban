@@ -41,7 +41,7 @@ public class ExceptionHandle {
      */
     @ExceptionHandler(value = UnifiedException.class)
     public ResponseEntity<Result<String>> unifiedExceptionHandle(UnifiedException e) {
-        Result<String> result = new Result<String>(e.getMessage(), e.getStatus());
+        Result<String> result = new Result<>(e.getMessage(), e.getStatus());
         if (e.getStatus() == HttpStatus.INTERNAL_SERVER_ERROR) {
             log.error(e.getMessage(), e);
         } else {

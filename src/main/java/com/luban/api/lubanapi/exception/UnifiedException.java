@@ -24,7 +24,7 @@ import java.util.Map;
  */
 @Slf4j
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 public class UnifiedException extends RuntimeException {
     private HttpStatus status;
     private String message;

@@ -1,6 +1,13 @@
 server:
   port: 18811
 spring:
+  resources:
+    static-locations:
+      - classpath:/META-INF/resources/
+      - classpath:/resources/
+      - classpath:/static/
+      - classpath:/public/
+      - file:${upload-path}
   profiles:
     active: dev
   servlet:

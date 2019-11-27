@@ -18,9 +18,9 @@ import java.io.Serializable;
  * @since 2019-11-26
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 @Accessors(chain = true)
-@ApiModel(value = "WorkForms对象", description = "")
+@ApiModel(value = "WorkForms对象")
 public class WorkForms implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -71,7 +71,7 @@ public class WorkController {
         WorkVO vo = new WorkVO();
         vo.setTemplate(Boolean.parseBoolean(dto.getIs_template()));
         BeanUtils.copyProperties(dto, vo);
-        IPage<Work> page = workService.page(new Page<>(dto.getCurrent(), dto.getSize()), new LambdaQueryWrapper<Work>(WorkConvert.toEntity(vo)).orderByDesc(Work::getCreateTime));
+        IPage<Work> page = workService.page(new Page<>(dto.getCurrent(), dto.getSize()), new LambdaQueryWrapper<>(WorkConvert.toEntity(vo)).orderByDesc(Work::getCreateTime));
         List<WorkVO> voList = page.getRecords().stream().map(WorkConvert::toVO).collect(Collectors.toList());
         return new Page<WorkVO>(page.getCurrent(), page.getSize(), page.getTotal()).setPages(page.getPages()).setRecords(voList);
     }

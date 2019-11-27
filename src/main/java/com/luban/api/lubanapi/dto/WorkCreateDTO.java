@@ -12,7 +12,7 @@ import java.util.List;
  * @author WeiHongBin
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 @Accessors(chain = true)
 @ApiModel(value = "WorkCreateDTO")
 public class WorkCreateDTO {

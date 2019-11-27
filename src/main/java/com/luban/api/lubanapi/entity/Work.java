@@ -20,9 +20,9 @@ import java.time.LocalDateTime;
  * @since 2019-11-26
  */
 @Data
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode
 @Accessors(chain = true)
-@ApiModel(value = "Work对象", description = "")
+@ApiModel(value = "Work对象")
 public class Work implements Serializable {
 
     private static final long serialVersionUID = 1L;
