@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://${H5_DB_URL:127.0.0.1:3306}/h5?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${H5_DB_USERNAME:root}
+    password: ${H5_DB_PASSWORD:root}
+  devtools:
+    add-properties: false

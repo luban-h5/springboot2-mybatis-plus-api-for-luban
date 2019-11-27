@@ -1,0 +1,30 @@
+server:
+  port: 18811
+spring:
+  profiles:
+    active: dev
+  servlet:
+    multipart:
+      max-file-size: 1GB
+      max-request-size: 1GB
+  banner:
+    location: https://img.rrztech.com/banner.txt
+  datasource:
+    hikari:
+      connection-test-query: SELECT 1
+      maximum-pool-size: 30
+      minimum-idle: 20
+      connection-timeout: 10000
+      idle-timeout: 300000
+      max-lifetime: 900000
+mybatis-plus:
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  type-aliases-package: com.luban.api.lubanapi.entity
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false

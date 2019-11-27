@@ -1,0 +1,11 @@
+logging:
+  level:
+    "com.luban.api.lubanapi": debug
+spring:
+  datasource:
+    driver-class-name: com.p6spy.engine.spy.P6SpyDriver
+    url: jdbc:p6spy:mysql://${H5_DB_URL:127.0.0.1:3306}/h5?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&allowPublicKeyRetrieval=true
+    username: ${H5_DB_USERNAME:root}
+    password: ${H5_DB_PASSWORD:root}
+  devtools:
+    add-properties: true
